@@ -1425,6 +1425,8 @@ Set this to a list of MAX-LEVEL headings as they are matched by
 Regexp should result in an occur-search showing up to
 outline-level LEVEL headlines in navi-buffer. If NO-PARENT-LEVELS
 in non-nil, only headers of level LEVEL are shown."
+  (unless outshine-promotion-headings
+    (navi-make-org-mode-promotion-headings-list))
   (if (not (and level
                 (integer-or-marker-p level)
                 (>= level 1)
