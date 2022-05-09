@@ -2433,7 +2433,7 @@ separate temporary Org-mode edit-buffer."
 (define-key navi-mode-map (kbd "DEL") 'scroll-down-command)
 (define-key navi-mode-map (kbd "TAB") 'navi-cycle-subtree)
 (define-key navi-mode-map (kbd "M-TAB") 'navi-cycle-buffer)
-;; (define-key navi-mode-map (kbd "<backtab>") 'navi-cycle-buffer)
+(define-key navi-mode-map (kbd "<backtab>") 'navi-cycle-buffer)
 (define-key navi-mode-map (kbd "m")
   'navi-mark-thing-at-point-and-switch)
 (define-key navi-mode-map (kbd "c")
